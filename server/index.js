@@ -12,8 +12,7 @@ app.use(logger('dev'));
 app.use(parser.urlencoded());
 app.use(express.static(dir + '/public'));
 
-app.use('/items/:id', express.static(dir + '/public'));
-
+app.use('/:id', express.static(dir + '/public'));
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
