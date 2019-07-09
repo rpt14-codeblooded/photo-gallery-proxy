@@ -5,8 +5,8 @@ var logger = require('morgan');
 var parser = require('body-parser');
 var path = require('path');
 
-
 const dir = path.parse(__dirname).dir;
+
 
 app.use(logger('dev'));
 app.use(parser.urlencoded());
